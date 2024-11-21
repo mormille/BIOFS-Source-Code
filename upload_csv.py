@@ -8,7 +8,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 import csv
 
 # Path to your service account key file
-SERVICE_ACCOUNT_FILE = 'biofs-v1-936568fca76c.json'
+SERVICE_ACCOUNT_FILE = '../credentials/biofs-v1-d9781d73191a.json'
 
 # Define the scope
 SCOPE = [
@@ -33,7 +33,7 @@ spreadsheet = gc.open("BIOFS_Spreadsheet_Data")  # e.g., 'DataLog'
 worksheet = spreadsheet.sheet1  # Access the first sheet
 
 # Path to your CSV file
-CSV_FILE_PATH = 'BIOFS_log.csv'
+CSV_FILE_PATH = 'biofs_data/BIOFS_log.csv'
 
 # Open the CSV file and read its contents
 with open(CSV_FILE_PATH, 'r') as file:
